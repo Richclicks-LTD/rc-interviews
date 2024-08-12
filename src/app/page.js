@@ -2,7 +2,7 @@ import Perks from "./perks";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main>
       <section className="bg-secondary">
         <div className="cont py-12">
           <h2 className="h2 text-center">Ciao!</h2>
