@@ -16,14 +16,20 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cont {
+  @apply max-w-screen-lg mx-auto px-6;
+}
+
+.shad {
+  box-shadow: 0 1px 3px #0003;
+}
+
+.h2 {
+  @apply font-extrabold text-5xl tracking-tight;
+}
+
+.h3 {
+  @apply font-extrabold text-2xl tracking-tight leading-none;
 }
 
 @layer utilities {
