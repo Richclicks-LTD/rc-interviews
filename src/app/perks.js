@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPinPlus, Dog, Book, Coffee } from "lucide-react";
+import { MapPinPlus, Dog, Book, Coffee, Lightbulb } from "lucide-react";
 import { Switch } from "./switch";
 
 const perks = [
@@ -9,7 +9,7 @@ const perks = [
     description:
       "Richclicks is a fully remote company, as long as you respect the concorded schedule, you can work from wherever you want! 1/4 of our colleagues is currently on the moon",
     icon: <MapPinPlus size={30} className="flex-shrink-0" />,
-    show: true,
+    hidden: false,
     importanceScores: [10, 8, 7, 9, 10],
   },
   {
@@ -17,15 +17,23 @@ const perks = [
     description:
       "Discover over 15 beautiful pets jumping in front of the camera of your colleagues! Find out which colleague have a raccoon",
     icon: <Dog size={30} className="flex-shrink-0" />,
-    show: true,
+    hidden: false,
     importanceScores: [10, 10, 9, 10],
+  },
+  {
+    title: "Passionate and interesting colleagues",
+    description:
+      "Get to know your colleagues and their passions through monthly 'sharing is caring' meetings where in turn everyone shares their passions and interests",
+    icon: <Lightbulb size={30} className="flex-shrink-0" />,
+    hidden: true,
+    importanceScores: [8, 10, 9, 10, 8, 10],
   },
   {
     title: "Free coffee",
     description:
       "We offer free coffee to all our employees, shipping the best beans all over the world!",
     icon: <Coffee size={30} className="flex-shrink-0" />,
-    show: true,
+    hidden: false,
     importanceScores: [1, 2, 3],
   },
   {
@@ -33,7 +41,7 @@ const perks = [
     description:
       "We offer a wide range of courses and certifications to help you grow in your career!",
     icon: <Book size={30} className="flex-shrink-0" />,
-    show: false,
+    hidden: true,
     importanceScores: [10, 10, 9, 10],
   },
 ];
@@ -59,6 +67,7 @@ export default function Perks() {
         </div>
         <div className="mt-4">
           {/* TODO 1: show the perks according to result.png image, feel free to create additional components if needed */}
+          {/* TODO 3: on click every perk should show a modal/dialog window with details of the perk, you are free to install additional library if you think is necessary/useful */}
         </div>
       </div>
     </section>
