@@ -25,7 +25,7 @@
 }
 
 .h2 {
-  @apply font-extrabold text-5xl tracking-tight;
+  @apply font-extrabold text-3xl lg:text-5xl tracking-tight;
 }
 
 .h3 {
